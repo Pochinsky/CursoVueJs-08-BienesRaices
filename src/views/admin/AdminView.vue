@@ -15,7 +15,7 @@ const { propertiesCollection, priceProperty } = useProperties();
     <v-list>
       <v-list-item v-for="property in propertiesCollection" :key="property.id">
         <template v-slot:prepend>
-          <v-list-item-media start="true">
+          <v-list-item-media :start="true">
             <img
               width="180"
               :src="property.image"
@@ -29,7 +29,14 @@ const { propertiesCollection, priceProperty } = useProperties();
         }}</v-list-item-subtitle>
         <template v-slot:append>
           <v-list-item-media :start="true">
-            <v-btn color="info" flat class="mr-3">Editar</v-btn>
+            <v-btn
+              color="info"
+              flat
+              class="mr-3"
+              :to="{ name: 'edit-property', params: { id: property.id } }"
+            >
+              Editar
+            </v-btn>
             <v-btn color="red-darken-3" flat>Eliminar</v-btn>
           </v-list-item-media>
         </template>

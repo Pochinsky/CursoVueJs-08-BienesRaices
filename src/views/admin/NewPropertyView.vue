@@ -44,9 +44,9 @@ const submit = handleSubmit(async (values) => {
     <v-card-title class="text-center text-h3 font-weight-bold" tag="h1"
       >Nueva Propiedad</v-card-title
     >
-    <v-card-subtitle class="text-h5 text-center"
-      >Ingresa los datos de tu nueva propiedad</v-card-subtitle
-    >
+    <v-card-subtitle class="text-h5 text-center" tag="p">
+      Ingresa los datos de tu nueva propiedad
+    </v-card-subtitle>
     <v-form class="mt-10">
       <v-text-field
         class="mb-4"
