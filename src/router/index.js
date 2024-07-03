@@ -29,7 +29,7 @@ const router = createRouter({
         },
         {
           path: "/admin/nueva-propiedad",
-          name: "new-properties",
+          name: "new-property",
           component: () => import("../views/admin/NewPropertyView.vue"),
         },
         {
