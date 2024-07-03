@@ -1,7 +1,8 @@
 <script setup>
 import useProperties from "@/composables/useProperties";
+import { priceProperty } from "@/helpers";
 
-const { propertiesCollection, priceProperty } = useProperties();
+const { propertiesCollection } = useProperties();
 </script>
 
 <template>
