@@ -2,7 +2,7 @@
 import useProperties from "@/composables/useProperties";
 import { priceProperty } from "@/helpers";
 
-const { propertiesCollection } = useProperties();
+const { propertiesCollection, deleteProperty } = useProperties();
 </script>
 
 <template>
@@ -25,9 +25,9 @@ const { propertiesCollection } = useProperties();
           </v-list-item-media>
         </template>
         <v-list-item-title>{{ property.name }}</v-list-item-title>
-        <v-list-item-subtitle>{{
-          priceProperty(property.price)
-        }}</v-list-item-subtitle>
+        <v-list-item-subtitle>
+          {{ priceProperty(property.price) }}
+        </v-list-item-subtitle>
         <template v-slot:append>
           <v-list-item-media :start="true">
             <v-btn
@@ -38,7 +38,13 @@ const { propertiesCollection } = useProperties();
             >
               Editar
             </v-btn>
-            <v-btn color="red-darken-3" flat>Eliminar</v-btn>
+            <v-btn
+              color="red-darken-3"
+              flat
+              @click="deleteProperty(property.id, property.image)"
+            >
+              Eliminar
+            </v-btn>
           </v-list-item-media>
         </template>
       </v-list-item>
