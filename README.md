@@ -1,29 +1,5 @@
-# cursovuejs-08-bienesraices
+# BienesRaices - Bienes Raices
 
-This template should help get you started developing with Vue 3 in Vite.
+Primer proyecto Full Stack; utilizaremos firebase para el backend; con firebase podemos subir archivos, crear datos en una base de datos real, autenticar usuarios sin tener conocimientos de backend, ideal para proyectos de clientes, pruebas técnicas o para aprender más sobre backend.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Para visitar el proyecto publicado [pincha aquí](https://curso-vue-js-08-bienes-raices.vercel.app/)
